@@ -418,6 +418,12 @@ header .mobile {
 #quotes-section quote-citation {
   height: 1.875rem;
 }
+@media only screen and (max-width:900px) {
+  #quotes-section quote{
+    text-align: left;
+    font-size: 25px;
+  }
+}
 
 @media only screen and (max-width: 760px) {
   #quotes-section content {

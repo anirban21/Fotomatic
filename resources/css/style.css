@@ -136,6 +136,7 @@ header .mobile {
   header .mobile .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
+    radius: 4px;
     line-height: 1.6;
     color: white;
   }
@@ -209,6 +210,7 @@ header .mobile {
 
   #sign-up-cta {
     position: static;
+    margin-left: 0;
     width: auto;
     height: auto;
     background-color: transparent;
@@ -217,6 +219,7 @@ header .mobile {
 
   #sign-up-cta .content {
     margin-top: 0;
+    margin-left: 0;
   }
 
   #sign-up-cta .email {
@@ -305,13 +308,22 @@ header .mobile {
 @media only screen and (max-width: 760px) {
   #features-section {
     flex-flow: column;
+    justify-content: flex-start;
     padding: 0;
+    height: auto  ;
+  }
+  #features-section .feature .image-container{
+    margin: 0;
   }
 
   .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    margin-bottom: 1.5rem;
   }
+
 }
 
 /* Filters Section */
@@ -380,6 +392,11 @@ header .mobile {
   }
 
   #filters-section .images-container {
+    max-width: 100%;
+    padding: 0;
+  }
+  #filters-section .images-container .image-container{
+    max-width: 33%;
     padding: 0;
   }
 
